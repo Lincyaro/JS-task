@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+</head>
+<style>
+    p{
+        background-color: rgb(51, 255, 0);
+        width:300px;
+        height:200px;
+        font-size:x-large ;
+        font-weight: 5px;
+        }
+        
+</style>
+<body>
+    <button id="myButton">click me!</button>
+    
+    <p id='click'>CLICK</p>
+
+    <p id='dblclick'>DoubleClick</p>
+
+    <p id='mousedown'>mousedown</p>
+
+    <p id='mouseup'>mouseup</p>
+
+    <p id="mousemove">mousemove</p>
+
+    <p id="mouseenter">mouseenter</p>
+
+    <p id="mouseleave">mouseleave</p>
+
+
+
+
+<script>
+    // click
+    var click = document.getElementById('click');
+
+    click.addEventListener('click', function (){
+        console.log('click event triggerwd.');
+    });
+
+
+
+    var dblclick = document.getElementById('dblclick');
+
+    dblclick.addEventListener('dblclick', function (){
+        console.log('dblclick event triggerwd.');
+    });
+
+
+
+    var mousedown = document.getElementById('mousedown');
+
+    mousedown.addEventListener('mousedown', function (){
+        console.log('mousedown event triggerwd.');
+    });
+
+
+
+    var mouseup = document.getElementById('mouseup');
+
+    mouseup.addEventListener('mouseup', function (){
+        console.log('mouseup event triggerwd.');
+    });
+
+
+
+    var mousemove = document.getElementById('mousemove');
+
+    mousemove.addEventListener('mousemove', function (){
+        console.log('mousemove event triggerwd.');
+    });
+
+
+
+    var mouseenter = document.getElementById('mouseenter');
+
+    mouseenter.addEventListener('mouseenter', function (){
+        console.log('mouseenter event triggerwd.');
+    });
+
+
+
+    var mouseleave = document.getElementById('mouseleave');
+
+    mouseleave.addEventListener('mouseleave', function (){
+        console.log('mouseleave event triggerwd.');
+    });
+
+
+
+
+</script>
+</body>
+</html>
